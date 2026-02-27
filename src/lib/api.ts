@@ -1,5 +1,10 @@
-const rawApiUrl = import.meta.env.VITE_API_URL?.replace(/\/$/, "") ?? (import.meta.env.PROD ? "" : "http://127.0.0.1:3001");
-const API_BASE_URL = rawApiUrl.includes("localhost") ? rawApiUrl.replace("localhost", "127.0.0.1") : rawApiUrl;
+const rawApiUrl = import.meta.env.VITE_API_URL?.replace(/\/$/, "") || "http://127.0.0.1:3001";
+
+// In production (Vercel), always use relative paths so requests hit the /api rewrites,
+// even if VITE_API_URL is accidentally set to localhost in the Vercel dashboard.
+const API_BASE_URL = import.meta.env.PROD
+  ? ""
+  : (rawApiUrl.includes("localhost") ? rawApiUrl.replace("localhost", "127.0.0.1") : rawApiUrl);
 
 const handleResponse = async (response: Response) => {
   const contentType = response.headers.get("content-type");
