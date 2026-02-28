@@ -58,6 +58,7 @@ export default {
         trust: {
           blue: "hsl(var(--trust-blue))",
           green: "hsl(var(--trust-green))",
+          primary: "hsl(var(--trust-blue))",
           light: "hsl(var(--trust-light))",
         },
         sidebar: {

@@ -9,57 +9,57 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 210 40% 15%;
+    --foreground: 215 45% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 40% 15%;
+    --card-foreground: 215 45% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 40% 15%;
+    --popover-foreground: 215 45% 18%;
 
-    /* Navy blue - Trust and reliability */
-    --primary: 210 60% 25%;
+    /* Navy blue from logo - primary brand color */
+    --primary: 215 55% 22%;
     --primary-foreground: 0 0% 100%;
 
-    /* Light blue-gray for secondary surfaces */
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 210 40% 15%;
+    /* Very light navy tint for secondary surfaces */
+    --secondary: 215 25% 96%;
+    --secondary-foreground: 215 45% 18%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 210 20% 45%;
+    --muted: 215 20% 96%;
+    --muted-foreground: 215 15% 45%;
 
-    /* Red - Brand accent from logo */
-    --accent: 0 72% 51%;
+    /* Red from logo "USA" — main accent for buttons, highlights, CTA */
+    --accent: 355 80% 45%;
     --accent-foreground: 0 0% 100%;
 
-    /* Success red */
-    --success: 0 72% 51%;
+    /* Red accent for success badge */
+    --success: 355 80% 45%;
     --success-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 15% 88%;
-    --input: 210 15% 88%;
-    --ring: 0 72% 51%;
+    --border: 215 15% 88%;
+    --input: 215 15% 88%;
+    --ring: 355 80% 45%;
 
     --radius: 0.5rem;
 
-    /* Custom trust-building colors */
-    --trust-blue: 210 60% 25%;
-    --trust-green: 0 72% 51%;
-    --trust-light: 210 20% 96%;
+    /* Trust colors */
+    --trust-blue: 215 55% 22%;
+    --trust-green: 355 80% 42%;
+    --trust-light: 215 20% 96%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 60% 25%), hsl(210 50% 35%));
-    --gradient-accent: linear-gradient(135deg, hsl(0 72% 51%), hsl(0 72% 61%));
-    --gradient-hero: linear-gradient(180deg, hsl(210 20% 98%), hsl(0 0% 100%));
+    --gradient-primary: linear-gradient(135deg, hsl(215 55% 22%), hsl(215 45% 32%));
+    --gradient-accent: linear-gradient(135deg, hsl(355 80% 42%), hsl(355 70% 50%));
+    --gradient-hero: linear-gradient(180deg, hsl(215 20% 98%), hsl(0 0% 100%));
     
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(210 60% 25% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(210 60% 25% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(210 60% 25% / 0.1);
-    --shadow-xl: 0 20px 25px -5px hsl(210 60% 25% / 0.15);
+    --shadow-sm: 0 1px 2px 0 hsl(215 55% 22% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(215 55% 22% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(215 55% 22% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(215 55% 22% / 0.15);
 
     --sidebar-background: 0 0% 98%;
 
@@ -79,40 +79,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 210 40% 8%;
-    --foreground: 210 15% 95%;
+    --background: 215 40% 8%;
+    --foreground: 215 15% 95%;
 
-    --card: 210 35% 12%;
-    --card-foreground: 210 15% 95%;
+    --card: 215 35% 12%;
+    --card-foreground: 215 15% 95%;
 
-    --popover: 210 40% 8%;
-    --popover-foreground: 210 15% 95%;
+    --popover: 215 40% 8%;
+    --popover-foreground: 215 15% 95%;
 
-    --primary: 210 30% 85%;
-    --primary-foreground: 210 40% 8%;
+    --primary: 215 30% 85%;
+    --primary-foreground: 215 40% 8%;
 
-    --secondary: 210 25% 15%;
-    --secondary-foreground: 210 15% 95%;
+    --secondary: 215 25% 15%;
+    --secondary-foreground: 215 15% 95%;
 
-    --muted: 210 25% 15%;
-    --muted-foreground: 210 15% 65%;
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 15% 65%;
 
-    --accent: 0 72% 51%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 215 30% 85%;
+    --accent-foreground: 215 40% 8%;
 
-    --success: 0 72% 51%;
+    --success: 355 80% 55%;
     --success-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
-    --destructive-foreground: 210 15% 95%;
+    --destructive-foreground: 215 15% 95%;
 
-    --border: 210 25% 20%;
-    --input: 210 25% 20%;
-    --ring: 0 72% 51%;
+    --border: 215 25% 20%;
+    --input: 215 25% 20%;
+    --ring: 215 30% 85%;
     
-    --trust-blue: 210 30% 85%;
-    --trust-green: 0 72% 51%;
-    --trust-light: 210 25% 15%;
+    --trust-blue: 215 30% 85%;
+    --trust-green: 355 80% 55%;
+    --trust-light: 215 25% 15%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

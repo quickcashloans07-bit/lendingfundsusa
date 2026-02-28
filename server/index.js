@@ -92,8 +92,8 @@ app.use((err, req, res, next) => {
 });
 
 if (process.env.NODE_ENV !== "production" || !process.env.VERCEL) {
-  app.listen(port, "127.0.0.1", () => {
-    console.log(`Loan application server running on port ${port} at 127.0.0.1`);
+  app.listen(port, () => {
+    console.log(`Loan application server running on port ${port}`);
   });
 }
 
