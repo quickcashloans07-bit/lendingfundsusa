@@ -49,7 +49,7 @@ const LoanProducts = () => {
               </CardDescription>
               <Link to={`/apply/${product.type}`}>
                 <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-mono transition-all duration-300 hover:shadow-lg hover:shadow-accent/30">
-                  Apply now
+                  Verify now
                 </Button>
               </Link>
             </CardContent>

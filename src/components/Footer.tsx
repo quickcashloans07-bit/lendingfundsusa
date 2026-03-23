@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
               <Link to="/terms" className="hover:text-accent transition-colors">Terms & Conditions</Link>
               <Link to="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
-              <Link to="/apply/personal" className="hover:text-accent transition-colors">Apply Now</Link>
+              <Link to="/apply/personal" className="hover:text-accent transition-colors">Verify Now</Link>
             </div>
           </div>
         </div>
